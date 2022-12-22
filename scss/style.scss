@@ -1,0 +1,50 @@
+@import "globals";
+@import "header";
+@import "row1";
+@import "row2";
+@import "row3";
+@import "row4";
+@import "row5";
+@import "row6";
+@import "row7";
+
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    background-image: url('../assets/img/site-bg-v3.png');
+    background-size: 100% auto;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $sepia;
+        opacity: 0.4;
+        mix-blend-mode: multiply;
+    }
+}
+h1, h2, h3, h4, h5, h6 {
+    color: $sepia;
+    font-family: $fibre;
+    letter-spacing: 4px;
+    font-weight: lighter;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+img {
+    height: 100px;
+}
+
+#main-container {
+    position: relative;
+    top: 0;
+}
+i {
+    font-family: "Fontawesome";
+    font-size: 26px;
+}

@@ -1,0 +1,90 @@
+#main-container {
+    .row {
+        &.row1 {
+            height: 80vh;
+            padding: 80px 0;
+            position: relative;
+            .row-video {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.6);
+                }
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                    box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.6);
+                }
+            }
+            .row-container {
+                position: relative;
+                z-index: 1;
+                height: 100%;
+                .col-text {
+                    position: absolute;
+                    top: 55%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                    h1 {
+                        font-size: 82px;
+                        text-shadow: 0 3px 6px rgb(0, 0, 0);
+                        font-family: $needleteeth;
+                        width: 80%;
+                        text-align: center;
+                        margin: auto;
+                        span {
+                            font-size: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 843px) {
+    #main-container {
+        .row {
+            &.row1 {
+                .row-container {
+                    .col-text {
+                        h1 {
+                            span {
+                                font-size: 82px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 422.5px) {
+    #main-container {
+        .row {
+            &.row1 {
+                .row-container {
+                    .col-text {
+                        margin-top: 30px;
+                        h1 {
+                            font-size: 75px;
+                            span {
+                                font-size: 75px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

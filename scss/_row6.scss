@@ -1,0 +1,86 @@
+.row {
+    &.row6 {
+        padding: 100px 80px;
+        .row-container {
+            .col-logos {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                .logo {
+                    img {
+                        height: 120px;
+                        width: auto;
+                        transition: all 0.3s ease;
+                        &:hover {
+                            filter: drop-shadow( 0px 2px 6px cyan);
+                        }
+                    }
+                    &:nth-child(2) {
+                        img {
+                            &:hover {
+                                filter: drop-shadow( 0px 2px 6px yellow);
+                            }
+                        }
+                    }
+                    &:last-child {
+                        img {
+                            filter: invert(100%);
+                            &:hover {
+                                filter: invert(100%) drop-shadow( 0px 2px 6px magenta);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 900px) {
+    .row {
+        &.row6 {
+            padding: 80px;
+            .row-container {
+                .col-logos {
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 50px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 450px) {
+    .row {
+        &.row6 {
+            .row-container {
+                .col-logos {
+                    .logo {
+                        img {
+                            height: 90px;
+                            width: auto;
+                            transition: all 0.3s ease;
+                            &:hover {
+                                filter: drop-shadow( 0px 2px 6px cyan);
+                            }
+                        }
+                        &:nth-child(2) {
+                            img {
+                                &:hover {
+                                    filter: drop-shadow( 0px 2px 6px yellow);
+                                }
+                            }
+                        }
+                        &:last-child {
+                            img {
+                                filter: invert(100%);
+                                &:hover {
+                                    filter: invert(100%) drop-shadow( 0px 2px 6px magenta);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

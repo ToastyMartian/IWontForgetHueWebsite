@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'JohnDoe'; 
+    src: url("../assets/fonts/JohnDoe.otf") format("opentype");
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Needleteeth';
+    src: url('../assets/fonts/Needleteeth_Psycho.ttf') format("truetype");
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Needleteeth Creepy';
+    src: url('../assets/fonts/Needleteeth_Creepy.ttf') format("truetype");
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fibre';
+    src: url("../assets/fonts/Fibre.otf") format("opentype");
+    font-style: normal;
+}
+// --FONTS-- //
+$johndoe     : 'JohnDoe';
+$needleteeth : 'Needleteeth';
+$creepy      : 'Needleteeth Creepy';
+$fibre       : 'Fibre';
+
+
+// --COLORS-- // 
+$white      : #FFF;
+$black      : #000;
+$sepia      : #f7f1ee;
+$cyan       : #3996a6;
+$yellow     : #ab9c3b;
+$magenta    : #ff006e;

@@ -1,0 +1,23 @@
+#main-container {
+    .row {
+        &.row2 {
+            padding: 80px 0;
+            .row-container {
+                text-align: center;
+                .col-title {
+                    h1 {
+                        font-size: 80px;
+                        margin: 0 0 30px 0;
+                        text-shadow: 0 3px 6px rgb(0, 0, 0);
+                    }
+                    
+                }
+                .col-counter {
+                    h2 {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
