@@ -108,6 +108,86 @@
     top: -240.5px;
   }
 }
+#main-social {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 10;
+}
+#main-social .col-discord {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 30px;
+}
+#main-social .col-discord .text {
+  background-color: #f7f1ee;
+  padding: 0;
+  border-radius: 10px;
+  position: relative;
+  max-height: 0;
+  transition: all 0.5s ease;
+}
+#main-social .col-discord .text p {
+  transition: all 1s ease;
+}
+#main-social .col-discord .text.active {
+  max-height: 140px;
+  padding: 30px;
+}
+#main-social .col-discord .text.active p {
+  color: black;
+}
+#main-social .col-discord .text.active::after {
+  max-height: 20px;
+}
+#main-social .col-discord .text p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: transparent;
+}
+#main-social .col-discord .text::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 20px;
+  background-color: #f7f1ee;
+  -webkit-clip-path: polygon(50% 99%, 0 0, 100% 0);
+          clip-path: polygon(50% 99%, 0 0, 100% 0);
+  bottom: -19px;
+  right: 10px;
+  max-height: 0;
+}
+#main-social .col-discord .link .icon {
+  border-radius: 100%;
+  height: 75px;
+  width: 75px;
+  background-color: #7289DA;
+  position: relative;
+}
+#main-social .col-discord .link .icon i {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+#main-social .col-discord .link .icon::after {
+  content: "1";
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  font-size: 16px;
+  line-height: 30px;
+  color: white;
+  background-color: rgb(255, 71, 71);
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  top: -5px;
+  right: -5px;
+}
+
 #main-container .row.row1 {
   height: 80vh;
   padding: 80px 0;
