@@ -1,7 +1,7 @@
 #main-container {
     .row {
         &.row2 {
-            padding: 80px 0;
+            padding: 100px 0 80px;
             .row-container {
                 text-align: center;
                 .col-title {
@@ -15,6 +15,28 @@
                 .col-counter {
                     h2 {
                         font-size: 40px;
+                        a {
+                            color: $sepia;
+                            transition: all 0.3s ease;
+                            &:first-child {
+                                &:hover {
+                                    color: cyan;
+                                    text-shadow: 0 2px 6px cyan;
+                                }
+                            }
+                            &:nth-child(2) {
+                                &:hover {
+                                    color: yellow;
+                                    text-shadow: 0 2px 6px yellow;
+                                }
+                            }
+                            &:last-child {
+                                &:hover {
+                                    color: magenta;
+                                    text-shadow: 0 2px 6px magenta;
+                                }
+                            }
+                        }
                     }
                 }
             }

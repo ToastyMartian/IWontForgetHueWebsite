@@ -1,0 +1,213 @@
+#main-footer {
+    position: relative;
+    .footer-row {
+        &.row1 {
+            padding: 80px 100px 50px;
+            .footer-container {
+                display: flex;
+                justify-content: space-between;
+                .col {
+                    h2 {
+                        margin-top: 0;
+                    }
+                    &.contact {
+                        p {
+                            color: $sepia;
+                            >a {
+                                color: $sepia;
+                                transition: all 0.3s ease;
+                                &:first-of-type {
+                                    &:hover {
+                                        color: cyan;
+                                    }
+                                }
+                                &:nth-of-type(2) {
+                                    &:hover {
+                                        color: yellow;
+                                    }
+                                }
+                                &:last-of-type {
+                                    &:hover {
+                                        color: magenta;
+                                    }
+                                }
+                            }
+                        }
+                        .socials {
+                            display: flex;
+                            gap: 25px;
+                            margin-top: 30px;
+                            a {
+                                color: $sepia;
+                                i {
+                                    text-shadow: 0 2px 6px #000;
+                                }
+                                &:first-child {
+                                    &:hover {
+                                        i {
+                                            color: cyan;
+                                            text-shadow: 0 2px 6px cyan;
+                                        }
+                                    }
+                                }
+                                &:nth-child(2) {
+                                    &:hover {
+                                        i {
+                                            color: yellow;
+                                            text-shadow: 0 2px 6px yellow;
+                                        }
+                                    }
+                                }
+                                &:last-child {
+                                    &:hover {
+                                        i {
+                                            color: magenta;
+                                            text-shadow: 0 2px 6px magenta;
+                                        }
+                                    }
+                                }
+                                i {
+                                    transition: all 0.3s ease;
+                                }
+                            }
+                        }
+                    }
+                    &.hr {
+                        p {
+                            color: $sepia;
+                            a {
+                                color: $sepia;
+                                transition: all 0.3s ease;
+                                &:hover {
+                                    color: cyan;
+                                }
+                            }
+                        }
+                    }
+                    &.platforms {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
+                        align-items: flex-end;
+                        img {
+                            height: 70px;
+                            width: auto;
+                            -webkit-filter: drop-shadow(0 2px 6px #000);
+                            filter: drop-shadow(0 2px 6px #000);
+                        }
+                    }
+                }
+            }
+        }
+        &.row2 {
+            padding: 20px 100px;
+            .footer-container {
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: -20px;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $sepia;
+                }
+                .col {
+                    &.credit {
+                        p {
+                            margin: 0;
+                            color: $sepia;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1100px) {
+    #main-footer {
+        .footer-row {
+            &.row1 {
+                .footer-container {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 30px;
+                    .col {
+                        &.contact {
+                            width: calc(50% - 15px);
+                        }
+                        &.hr {
+                            width: calc(50% - 15px);
+                        }
+                        &.platforms {
+                            flex-direction: row;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 650px) {
+    #main-footer {
+        .footer-row {
+            &.row1 {
+                .footer-container {
+                    flex-wrap: unset;
+                    flex-direction: column;
+                    gap: 30px;
+                    .col {
+                        &.contact {
+                            margin: 0 auto;
+                            width: 70%;
+                        }
+                        &.hr {
+                            margin: 0 auto;
+                            width: 70%;
+                        }
+                        &.platforms {
+                            flex-direction: row;
+                            img {
+                                height: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 450px) {
+    #main-footer {
+        .footer-row {
+            &.row1 {
+                padding: 80px 60px 50px;
+                .footer-container {
+                    .col {
+                        &.contact {
+                            margin: 0 auto;
+                            width: 100%;
+                        }
+                        &.hr {
+                            margin: 0 auto;
+                            width: 100%;
+                        }
+                        &.platforms {
+                            flex-direction: column;
+                            justify-content: center;
+                            a {
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+            &.row2 {
+                padding: 80px 60px 50px;
+            }
+        }
+    }
+}

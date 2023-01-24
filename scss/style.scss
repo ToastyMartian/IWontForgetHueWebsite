@@ -1,5 +1,6 @@
 @import "globals";
 @import "header";
+@import "footer";
 @import "social";
 @import "row1";
 @import "row2";
@@ -12,7 +13,7 @@
 body {
     scroll-behavior: smooth;
     margin: 0;
-    background-image: url('../assets/img/site-bg-v3.png');
+    background-image: url('../assets/img/site-bg-blueprints-dark.png');
     background-size: 100% auto;
     position: relative;
     &::before {
@@ -32,6 +33,15 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $fibre;
     letter-spacing: 4px;
     font-weight: lighter;
+}
+p {
+    text-shadow: 0 2px 6px #000;
+    a {
+        text-shadow: 0 2px 6px #000;
+    }
+}
+h2 {
+    text-shadow: 0 2px 6px #000;
 }
 a {
     text-decoration: none;
